@@ -1,7 +1,9 @@
 # BootCamp Avanade
+Java Restful API
 
-##
+## Diagrama de Classes
 
+```mermaid
 classDiagram
     class User {
         +String name
@@ -37,3 +39,4 @@ classDiagram
     User --> Feature : has many
     User --> Card
     User --> News : has many
+```
