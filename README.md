@@ -6,6 +6,7 @@ Java Restful API
 ```mermaid
 classDiagram
     class User {
+        +Long Id
         +String name
         +Account account
         +Feature[] features
@@ -14,29 +15,33 @@ classDiagram
     }
 
     class Account {
+        +Long Id
         +String number
         +String agency
-        +double balance
-        +String limit
+        +BigDecimal balance
+        +BigDecimal limit
     }
 
     class Feature {
+        +Long Id
         +String icon
         +String description
     }
 
     class Card {
+        +Long Id
         +String number
-        +double limit
+        +BigDecimal limit
     }
 
     class News {
+        +Long Id
         +String icon
         +String description
     }
 
     User "1" *-- "1" Account
-    User "1" *-- "N" Feature : has many
+    User "1" *-- "N" Feature
     User "1" *-- "1" Card
-    User "1" *-- "N" News : has many
+    User "1" *-- "N" News
 ```
