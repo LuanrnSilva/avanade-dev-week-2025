@@ -1,5 +1,5 @@
 # BootCamp Avanade
-Java Restful API
+Java Restful API DIO
 
 ## Diagrama de Classes
 
